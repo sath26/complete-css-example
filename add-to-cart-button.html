@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			font-family: 'Open Sans', sans-serif;
+			height: 100vh;
+		}
+		.btn{
+			width: 250px;
+			height: 55px;
+			background: #121212;
+			color: #FFFFFF;
+
+			border-radius: 5px;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			user-select: none;
+			transition: .25s;
+
+			position: relative;
+		}
+		.btn i {
+			font-size: 17px;
+
+			position: absolute;
+			top: 48.5%;
+			left: 20%;
+			transform: translate(-50%, -50%);
+
+			transition: .25s;
+		}
+		.btn span{
+			font-weight: bold;
+			font-size: 20px;
+			text-transform: uppercase;
+
+			margin-left: 30px;
+
+			transition:.25s;
+			clip-path: circle(200px at 125px 27.5px);
+		}
+		.btn:hover{
+			cursor: pointer;
+			opacity: .8;
+		}
+		.btn:hover i{left: 50%;}
+		.btn:hover span{
+			clip-path: circle(0px at 125px 27.5px); 
+		}
+	</style>
+</head>
+<body>
+	<div class="btn">
+		<i class="fa fa-shopping-cart"></i>
+			<span>add to cart</span>
+		
+	</div>
+</body>
+</html>
